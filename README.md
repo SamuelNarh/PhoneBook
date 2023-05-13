@@ -4,7 +4,7 @@
 ⚡️Any code text editor eg.sublime, vscode etc.
 ⚡️pip install django.
 
-Steps
+# Steps
 #Clone the repository
 ⚡️$ git clone https://github.com/SamuelNarh/PhoneBook.git
 #Move into the repository
