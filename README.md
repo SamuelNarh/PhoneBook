@@ -2,6 +2,8 @@
 
 # Requirement
 ⚡️Any code text editor eg.sublime, vscode etc.
+⚡️Python 3.9 or above
+⚡️Python Anaconda
 ⚡️pip install django.
 
 # Steps
