@@ -1,26 +1,24 @@
 # PhoneBook
 
-Requirement
+# Requirement
 ⚡️Any code text editor eg.sublime, vscode etc.
 ⚡️pip install django.
 
 Steps
 #Clone the repository
 ⚡️$ git clone https://github.com/SamuelNarh/PhoneBook.git
-
- #Move into the repository
+#Move into the repository
 ⚡️$ cd PhoneBook
-
 #Open in vscode
 ⚡️code .
 
-#Create a virtual environment
+# Create a virtual environment
 ⚡️conda create --name myDjangoEnv django
 # Activate the virtual environment
 ⚡️ conda activate myDjangoEnv
 
-#In your Terminal
-# Install Django
+# In your Terminal
+Install Django
 ⚡️ pip install django
 ⚡️In your terminal run 'python manage.py makemigrations' --This helps to initiate the table I have created in the model.py file to be detected. 
 ⚡️In your terminal run 'python manage.py migrate'---This creates the database to store all your contacts.
