@@ -1,11 +1,20 @@
+const mobile_format = document.querySelector(".mobile_format");
 
-
-const mobile_format =document.querySelector('.mobile_format');
-const phone_number = function(){
-
-    if (mobile_format.value.length ===3|| mobile_format.value.length ===7)
-    {
-        mobile_format.value+="-";
-    }
+function formatPhoneNumber(value) {
+  const phoneNumber = value.replace(/[^\d]/g, "");
+  const phoneNumberLength = phoneNumber.length;
+  if (phoneNumber<4) 
+   {return phoneNumber.slice(0,4) ;}
+  if (phoneNumberLength <7) {
+  return  `${phoneNumber.slice(0, 3)}-${phoneNumber.slice(3)}`;
+  }
+  return `${phoneNumber.slice(0, 3)}-${phoneNumber.slice(3,6,)}-${phoneNumber.slice(6,10)}`;
 }
-mobile_format.addEventListener('input',phone_number);
+
+function phoneNumberFormatter() {
+  const inputField = document.querySelector(".mobile_format");
+  const formattedInputValue = formatPhoneNumber(inputField.value);
+  inputField.value = formattedInputValue;
+}
+
+mobile_format.addEventListener('input',phoneNumberFormatter)
