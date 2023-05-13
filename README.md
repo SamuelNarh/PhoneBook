@@ -1,1 +1,16 @@
 # PhoneBook
+
+Requirement
+Any code text editor eg.sublime, vscode etc.
+pip install django.
+
+Steps
+Download the zip file of the project .
+Extract your downloaded zip file.
+Open it in any code editor .
+In your terminal run 'python manage.py makemigrations' --This helps to initiate the table I have created in the model.py file to be detected. 
+In your terminal run 'python manage.py migrate'---This creates the database to store all your contacts.
+In your terminal run 'python manage.py runserver'.
+Copy the http:\\ link given to you in the terminal eg.http://127.0.0.1:8000/  
+Add phonebook to the link eg. add http://127.0.0.1:8000/phonebook/
+Your PhoneBook app is read !!!
